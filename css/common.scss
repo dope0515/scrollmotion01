@@ -1,0 +1,29 @@
+.con-wrap {
+    .con-box{
+        width: 100%;
+        height: 100%;
+    }
+    .stacking-slide {
+        height: 100vh;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        
+        // Not needed if 100vh
+        &:nth-last-child(1) {
+          height: 100vh;
+        }
+        h2 {
+            text-align: center;
+        }
+      }
+      // Styling only
+      *, *:before, *:after {
+        box-sizing: border-box;
+      }
+      
+      .stacking-slide {
+        padding-top: 3rem;
+        background-color: #fff;
+      }
+}
